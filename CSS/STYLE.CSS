@@ -306,3 +306,26 @@ h5 {
         font-size: 18px;
     }
 }
+
+@media screen and (max-width:765px){
+
+    .img__wrapper-text {
+        padding: 10px 60px;
+    }
+
+    .img__wrapper{
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .img__responsive{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
