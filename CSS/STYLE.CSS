@@ -327,5 +327,21 @@ h5 {
         margin: 0 auto;
         text-align: center;
     }
+    .about__section p {
+        line-height: 22px;
+    }
+
+    .extra__section p{
+        font-size: 15px;
+    }
+
+    .extra__section{
+        line-height: 22px;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+        font-size: 16px;
+    }
 
 }
