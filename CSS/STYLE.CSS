@@ -294,7 +294,7 @@ h5 {
     color: var(--first-color);
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:468px){
     .navbar a{
         letter-spacing: 1px;
         font-size: 1rem;
