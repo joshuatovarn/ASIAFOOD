@@ -60,7 +60,7 @@ h5 {
 
 .navbar a {
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--white-color);
     margin-left: 3rem;
     background-color: var(--black-color);
     letter-spacing: 4px;
@@ -69,7 +69,7 @@ h5 {
 }
 
 .navbar a:hover {
-    color: var(--white-color);
+    color: var(--first-color);
 }
 
 .hero__section {
