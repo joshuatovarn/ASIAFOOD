@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/STYLE.CSS">
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">
     <link rel="shortcut icon" href="IMG/sushi png.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body>
     <div class="navbar">
         <a href="#home">HOME</a>
-        <a href="#story">STORY</a>
+        <a href="#about">ABOUT</a>
         <a href="#menu">MENU</a>
         <a href="#contact">CONTACT</a>
     </div>
@@ -27,8 +30,7 @@
         </div>
     </div>
 
-    <a name="home"></a>
-    <div class="home__section">
+    <div id="home" class="home__section full-lg-screen">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -50,7 +52,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="img__wrapper">
+                    <div class="img__wrapper wrapper">
                         <img src="IMG/food4.jpg" alt="">
                         <div class="img__wrapper-text">
                             <h5>Dinner</h5>
@@ -62,123 +64,116 @@
         </div>
     </div>
 
-    <a name="story">
-        <div class="about__section">
-    </a>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="img__background">
-                    <img src="IMG/story.jpg" class="img__responsive">
-                </div>
+    <section class="container about-section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="/IMG/story.jpg" alt="">
             </div>
-            <div class="col-md-8">
-                <h4>ASIA FOOD SINCE 2009</h4><br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ad quo sapiente laudantium
-                    commodi iste facere tenetur cumque quis dicta dolorem libero rem odio neque nisi nostrum velit
-                    eum tempora soluta, numquam eius. Vero, quos praesentium. Odio odit neque fugit ex nihil
-                    explicabo magni officiis voluptate quo saepe perferendis vitae deserunt autem eligendi aut
-                    inventore non in ullam voluptatem enim, quam, praesentium rerum. Eligendi minima dicta
-                    aspernatur vitae facere repudiandae accusamus veniam vero dolore reprehenderit. Labore a, quidem
-                    explicabo dignissimos, consectetur nihil odio exercitationem fugiat obcaecati aut, vel totam
-                    tenetur!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolore quam rem, facilis eligendi
+
+            <div>
+                <h2 class="about__subtitle">ASIA FOOD SINCE 2009</h2>
+                <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum
+                    expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo
+                    recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
+
+                <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolore quam rem, facilis eligendi
                     nostrum vitae voluptates cupiditate facere rerum sed dicta voluptatem nobis aperiam! Fuga error
                     necessitatibus ipsum iusto asperiores incidunt eligendi eos unde similique, sint est itaque
-                    perspiciatis in laudantium modi, illum cumque! Optio enim corrupti aliquam et? Ad repellat
-                    impedit veritatis. Fugiat quis magnam aspernatur tempora animi ipsam distinctio, assumenda
-                    numquam perspiciatis minus sit rerum, autem excepturi non ratione sed dolorum cupiditate est
-                    ullam nihil facere? Mollitia natus quas sapiente quae similique, fuga inventor luptates iusto
-                    illum officiis maiores necessitatibus magni consectetur eaque?</p>
+                    perspiciatis in laudantium modi, illum cumque!? incidunt eligendi eos unde similique, sint est
+                    itaque
+                    perspiciatis in laudantium modi, illum cumque! incidunt eligendi eos unde similique, sint est itaque
+                    perspiciatis in laudantium modi, illum cumque! perspiciatis in laudantium modi, illum cumque! incidunt eligendi eos unde similique, sint est itaque
+                    perspiciatis in laudantium modi, illum cumque!</p>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
 
-    <a name="menu">
-        <div class="extra__section">
-    </a>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mb-5">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="IMG/cat1.jpg" class="img__responsive">
-                    </div>
-                    <div class="col-md-8 bg__dark text__light p-3">
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum voluptate.
-                            Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
-                            quaerat libero?</p>
-                        <a href="#" class="btn__light">Read recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="IMG/cat2.jpg" class="img__responsive">
-                    </div>
-                    <div class="col-md-8 bg__dark text__light p-3">
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum voluptate.
-                            Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
-                            quaerat libero?</p>
-                        <a href="#" class="btn__light">Read recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="IMG/cat3.jpg" class="img__responsive">
-                    </div>
-                    <div class="col-md-8 bg__dark text__light p-3">
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum voluptate.
-                            Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
-                            quaerat libero?</p>
-                        <a href="#" class="btn__light">Read recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="IMG/cat4.jpg" class="img__responsive">
-                    </div>
-                    <div class="col-md-8 bg__dark text__light p-3">
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum voluptate.
-                            Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
-                            quaerat libero?</p>
-                        <a href="#" class="btn__light">Read recipe</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
-    <a name="recipes"></a>
-    <div class="subscribe__section">
+    <div id="menu" class="menu full-lg-screen">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor, sit amet consectetur sit amet consectetur sit amet consectetur. </p>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 mb-5">
+                            <img src="IMG/cat1.jpg" class="img__responsive">
+                        </div>
+                        <div class="col-md-8 bg__dark text__light p-3">
+                            <h4>Lorem ipsum dolor</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum
+                                voluptate.
+                                Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
+                                quaerat libero?</p>
+                            <a href="#" class="btn__light">Read recipe</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <form>
-                        <input type="email">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                <div class="col-md-6 mb-5">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="IMG/cat2.jpg" class="img__responsive">
+                        </div>
+                        <div class="col-md-8 bg__dark text__light p-3">
+                            <h4>Lorem ipsum dolor</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum
+                                voluptate.
+                                Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
+                                quaerat libero?</p>
+                            <a href="#" class="btn__light">Read recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="IMG/cat3.jpg" class="img__responsive">
+                        </div>
+                        <div class="col-md-8 bg__dark text__light p-3">
+                            <h4>Lorem ipsum dolor</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum
+                                voluptate.
+                                Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
+                                quaerat libero?</p>
+                            <a href="#" class="btn__light">Read recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="IMG/cat4.jpg" class="img__responsive">
+                        </div>
+                        <div class="col-md-8 bg__dark text__light p-3">
+                            <h4>Lorem ipsum dolor</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum enim a earum
+                                voluptate.
+                                Omnis eum consectetur vero quas culpa fugit esse atque inventore dicta voluptate in, at,
+                                quaerat libero?</p>
+                            <a href="#" class="btn__light">Read recipe</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <a name="contact"></a>
-    <div class="contact__section">
+
+    <div id="contact" class="subscribe__section">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor, sit amet consectetur sit amet consectetur sit amet consectetur. </p>
+            </div>
+            <div class="col-md-4">
+                <form>
+                    <input type="email" name="email" placeholder="Email*">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact__section ">
         <div class="container">
             <div class="row">
                 <p class="pcenter">89 Baxter St, New York, NY 10013, USA. (212) 534-1215</p>
@@ -188,6 +183,15 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer ">
+        <small>Sitio diseñado por Joshua Tovar</small>
+        <br>
+        <a href="https://instagram.com" target="__blank"><i class="fab fa-instagram icons"></i></a>
+        <a href="https://facebook.com" target="__blank"><i class="fab fa-facebook-square icons"></i></a>
+        <a href="https://youtube.com" target="__blank"><i class="fab fa-youtube icons"></i></i></a>
+    </footer>
+
 </body>
 
 </html>
