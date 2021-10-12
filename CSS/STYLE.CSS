@@ -44,52 +44,118 @@ h5 {
 
 }
 
-.navbar {
-    position: fixed;
-    text-align: center;
-    background: var(--black-color);
-    width: 100%;
-    padding: 1rem;
-    z-index: 999;
+.container-nav {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
 }
 
-.navbar a {
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
     text-decoration: none;
+}
+
+.nav {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 3rem;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--black-color);
+        transition: .5s;
+        font-size: 1rem;
+    }
+}
+
+.nav__item {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.nav__link {
+    position: relative;
     color: var(--white-color);
-    margin-left: 3rem;
-    background-color: var(--black-color);
-    letter-spacing: 4px;
+}
+
+.nav__link:hover {
+    position: relative;
+}
+
+.nav__link:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+.nav__logo {
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.nav__toggle {
+    color: var(--white-color);
     font-size: 1.5rem;
-    transition: all .5s ease-out;
+    cursor: pointer;
 }
 
-.navbar a:hover {
-    color: var(--first-color);
+/*Active menu*/
+.active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
 }
 
-.hero__section {
+/*=== Show menu ===*/
+.show {
+    right: 0;
+}
+
+/***HERO***/
+
+.hero-section{
+    background-image: linear-gradient(#55080486, #310606a2), url(/IMG/markus-winkler-PZI6QDxxpPg-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(#ee7d7986, #cf5454a2), url("../IMG/markus-winkler-PZI6QDxxpPg-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
 }
 
-.hero__text {
+.hero-text {
     color: var(--white-color);
     text-align: center;
 }
 
-.hero__text h1 {
+.hero-text h1 {
     font-size: 8vh;
 }
 
-.hero__text p {
+.hero-text p {
     font-size: 2vh;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -298,6 +364,32 @@ h5 {
 
 .icons:hover {
     color: var(--first-color);
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px) {
+   
+    .nav {
+        height: calc(3rem + 1rem);
+    }
+
+    .nav__list {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav__item {
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        color: var(--white-color);
+    }
 }
 
 @media screen and (max-width:468px) {

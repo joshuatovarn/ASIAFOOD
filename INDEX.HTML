@@ -15,20 +15,34 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#menu">MENU</a>
-        <a href="#contact">CONTACT</a>
-    </div>
+    <header class=nav-bar>
+        <nav class="nav container-nav">
+            <div>
+                <a href="#" class="nav__logo">asiafood</a>
+            </div>
 
-    <div class="hero__section">
-        <div class="hero__text">
-            <h1>ASIA FOOD</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi?? </p><br><br>
-            <a href="#about" class="btn__hero">Read more</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>ASIA FOOD</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi?? </p><br><br>
+                <a href="#about" class="btn__hero">Read more</a>
+            </div>
         </div>
-    </div>
+    </header>
 
     <div id="home" class="container full-lg-screen">
         <div class="gallery-container">
@@ -191,6 +205,7 @@
         <a href="https://youtube.com" target="__blank"><i class="fab fa-youtube icons"></i></i></a>
     </footer>
 
+    <script src="/JS/main.js"></script>
 </body>
 
 </html>
